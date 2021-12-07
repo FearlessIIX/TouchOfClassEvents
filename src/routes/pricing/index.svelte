@@ -2,6 +2,9 @@
     File Location: 'routes/pricing/index.svelte'
     This file is the location where pricing information is located
  -->
+ <script>
+    import PlanComponent from "./PlanComponent.svelte";
+ </script>
 
  <div class="bg-cameo-pink-lightest py-6 sm:py-8 lg:py-12">
     <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
@@ -30,45 +33,13 @@
           </div>
   
           <div class="flex-1 bg-gray-100 rounded-lg space-y-3 px-4 py-6">
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
+              <PlanComponent>1000 MB file storage</PlanComponent>
+            
+              <PlanComponent>2.000 MB bandwidth per month</PlanComponent>
+              
+              <PlanComponent>200 tasks per month</PlanComponent>
   
-              <span class="text-gray-600">1.000 MB file storage</span>
-            </div>
-            <!-- check - end -->
-  
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">2.000 MB bandwidth per month</span>
-            </div>
-            <!-- check - end -->
-  
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">200 tasks per month</span>
-            </div>
-            <!-- check - end -->
-  
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">Comunity support</span>
-            </div>
-            <!-- check - end -->
+              <PlanComponent>Comunity support</PlanComponent>
           </div>
         </div>
         <!-- plan - end -->
@@ -99,55 +70,15 @@
           </div>
   
           <div class="flex-1 bg-gray-100 rounded-lg space-y-3 px-4 py-6">
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">Unlimited file storage</span>
-            </div>
-            <!-- check - end -->
-  
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">10 GB bandwidth per month</span>
-            </div>
-            <!-- check - end -->
-  
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">10.000 tasks per month</span>
-            </div>
-            <!-- check - end -->
-  
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">Email support</span>
-            </div>
-            <!-- check - end -->
-  
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">100 Webhooks</span>
-            </div>
-            <!-- check - end -->
+              <PlanComponent>Unlimited file storage</PlanComponent>
+
+              <PlanComponent>10 GB bandwidth per month</PlanComponent>
+
+              <PlanComponent>10.000 tasks per month</PlanComponent>
+
+              <PlanComponent>Email support</PlanComponent>
+
+              <PlanComponent>100 Webhooks</PlanComponent>
           </div>
         </div>
         <!-- plan - end -->
@@ -175,54 +106,16 @@
   
           <div class="flex-1 bg-gray-100 rounded-lg space-y-3 px-4 py-6">
             <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">Unlimited file storage</span>
-            </div>
-            <!-- check - end -->
-  
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">Unlimited bandwidth per month</span>
-            </div>
-            <!-- check - end -->
-  
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">1.000.000 tasks per month</span>
-            </div>
-            <!-- check - end -->
-  
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">Email and phone support</span>
-            </div>
-            <!-- check - end -->
-  
-            <!-- check - start -->
-            <div class="flex gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-  
-              <span class="text-gray-600">Unlimited Webhooks</span>
-            </div>
-            <!-- check - end -->
+            
+            <PlanComponent>Unlimited file storage</PlanComponent>
+              
+              <PlanComponent>Unlimited bandwidth per month</PlanComponent>
+
+              <PlanComponent>1.000.000 tasks per month</PlanComponent>
+
+            <PlanComponent>Email and phone support</PlanComponent>
+              
+            <PlanComponent>Unlimited Webhooks</PlanComponent>
           </div>
         </div>
         <!-- plan - end -->
